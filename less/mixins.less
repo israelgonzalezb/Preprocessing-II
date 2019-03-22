@@ -5,7 +5,7 @@
 .button-style (@width, @height) {
   width: @width;
   height: @height;
-  background-color: #11807F;
+  background-color: @button-bg;
   border-radius: 8px;
   text-align: center;
 //  vertical-align: middle;
@@ -13,4 +13,7 @@
   color: white;
   font-size: 1.8em;
   font-weight: 600;
+  @media @mobile {
+    background-color: @mobile-button-bg;
+  }
 }
